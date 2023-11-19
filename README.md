@@ -1,9 +1,41 @@
-# Assignment 1
+# Messaging module
 
-You will only need one file, ie, your node module, for this assignment.
+This is a messaging module made to allow the user to create accounts, create chatgroups and send messages in groups
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to setup your node module, if any. Describe how to call the functions, what parameters required and so on.
+### create User
+```bash
+createUser(username, password)
+```
+  This function create an account
+### login User
+```bash
+loginUser(username, password)
+```
+ This function validate a log into account
+### add Message
+```bash
+addMessage(text, user, groupname)
+```
+ This function add a message into an database 
 
-You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
+### add User to Group 
+```bash
+addUsertoGroup(username, groupname)
+```
+This function add a user into a group
 
-For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+### read Chat Group
+```bash
+readChatGroup(groupname)
+```
+This functions returns a string that consists of all the chat logs from a chat group  
+### get Chat Groups
+```bash
+getChatGroups(inputusername)
+```
+this function returns all chat groups the given user is in
+### Create Chat Group
+```bash
+CreateChatGroup(groupname, users, admins)
+```
+this function create a chat group
