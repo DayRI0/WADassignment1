@@ -1,7 +1,7 @@
 # Messaging module
 
 This is a messaging module made to allow the user to create accounts, create chatgroups and send messages in groups
-
+use the given app.js to test module
 ### create User
 ```bash
 createUser(username, password)
@@ -39,3 +39,4 @@ this function returns all chat groups the given user is in
 CreateChatGroup(groupname, users, admins)
 ```
 this function create a chat group
+
